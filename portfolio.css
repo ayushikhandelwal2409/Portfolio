@@ -1,0 +1,224 @@
+.gi{
+    background-color:#a7c957;
+}
+.body{
+    display: grid;
+    grid-template-rows: 80px 1fr 1fr 1fr 1fr 1fr 1fr  60px;
+    grid-template-columns: auto;
+}
+.con{
+    display:flex;
+    flex-direction: row;
+    background-image: url("thought.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  } 
+  .pic{
+    width: 50%;
+  }     
+  .ayushi{
+    border:4px solid antiquewhite ;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin-top: 70px;
+    margin-left: 150px;
+  }
+  .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .thought{
+    width: 100%;
+    font-size: 2rem;
+    font-family: inherit;
+    font-weight: 500;
+  }
+  .text1{
+    width: 100%;
+    font-size: 2rem;
+    font-family: inherit;
+    font-weight: 500;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+    animation:aagepiche 2s infinite alternate-reverse ;
+  }
+  @keyframes aagepiche{
+    0%{
+        color:white;
+        margin-bottom: -40px;
+        
+    }
+    30%{
+        color: rgba(112, 216, 117, 0.755);
+        letter-spacing: 10px;
+        margin-bottom: -40px;
+    }
+    85%{
+        color: rgba(112, 216, 133, 0.71);
+        letter-spacing: 6px;
+        margin-bottom: -40px;
+    }
+  }
+  .skillsflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .skills{
+    margin: 50px; 
+  }
+  .skills img{
+        height: 150px;
+        width: 150px;   
+        border: 8px solid darkgreen;
+        border-radius: 25%;
+  }
+  .skills img:hover{
+        height: 180px;
+        width: 180px; 
+  }
+  .Achievementsflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .Achievementsflex div{
+    margin: 40px;
+    background-color: rgba(235, 234, 234, 0.332); 
+    height: 300px;
+    width: 330px;
+    text-align: center;
+    border-radius: 10%;
+  }
+  .Achievementsflex img{
+    height: 200px;
+    width: 300px;  
+    margin-top: 30px; 
+}
+.Achievementsflex div:hover{
+    height:350px ;
+    width:380px;
+    background-color: rgba(235, 234, 234, 0.645);
+    font-size: larger;
+    line-height: 60px;
+}
+.Projectsflex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.Projectsflex div{
+  margin: 20px;
+  background-color:rgba(235, 234, 234, 0.332); 
+  height: 350px;
+  width: 400px;
+  text-align: center;
+  border-radius: 10%;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+.Projectsflex img{
+  height: 200px;
+  width: 350px;  
+  margin: 20px; 
+}
+.Projectsflex div:hover{
+  height:400px ;
+  width:410px;
+  background-color: rgba(235, 234, 234, 0.645);
+  font-size: larger;
+  line-height: 30px;
+}
+.contactflex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:center;
+}
+.contactflex .columnleft{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-basis: 700px;
+  margin: 40px;
+}
+.contactflex .columnright{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 40px;
+}
+.fields{
+  display: flex;
+  flex-direction: row;
+}
+.fieldname input,.fieldemail input{
+  margin-bottom: 10px;
+  width: 97%;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.field input{
+  width: 100%;
+  margin-bottom:10px;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.fieldtextarea textarea{
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.button-area button{
+  background-color:#4CAF50;
+  border: 1px solid transparent;
+  border-radius: 5%;
+  padding: 15px;
+  color: white;
+}
+.button-area button:hover {
+  background-color: #45a049;
+}
+
+  @media(max-width:500px){
+    .con{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .con .ayushi{
+      height: 190px;
+      width: 190px;
+      margin-top: 20px;
+      margin-left: 30px;
+    }
+  .box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 60px;
+      margin-left: 20px;
+    }
+    .box div{ 
+      flex-wrap: wrap;
+      font-size: 17px;
+    }
+  }
+
