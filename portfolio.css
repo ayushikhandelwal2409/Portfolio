@@ -1,0 +1,945 @@
+.gi{
+    background-color:#a7c957;
+}
+
+section.gi {
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    display: grid;
+    grid-template-rows: 80px 1fr 1fr 1fr 1fr 1fr 1fr  60px;
+    grid-template-columns: auto;
+}
+.con{
+    display:flex;
+    flex-direction: row;
+    background-image: url("thought.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 450px;
+  } 
+  .pic{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }     
+  .ayushi{
+    border:4px solid antiquewhite ;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin-top: 70px;
+    margin-left: 150px;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 20px;
+  }
+  .thought{
+    width: 100%;
+    font-size: 2rem;
+    font-family: inherit;
+    font-weight: 500;
+  }
+  .text1{
+    width: 100%;
+    font-size: 2rem;
+    font-family: inherit;
+    font-weight: 500;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+    animation:aagepiche 2s infinite alternate-reverse ;
+  }
+  @keyframes aagepiche{
+    0%{
+        color:white;
+        margin-bottom: -40px;
+        
+    }
+    30%{
+        color: rgba(112, 216, 117, 0.755);
+        letter-spacing: 10px;
+        margin-bottom: -40px;
+    }
+    85%{
+        color: rgba(112, 216, 133, 0.71);
+        letter-spacing: 6px;
+        margin-bottom: -40px;
+    }
+  }
+  .skillsflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .skills{
+    margin: 50px; 
+  }
+  .skills img{
+        height: 150px;
+        width: 150px;   
+        border: 8px solid darkgreen;
+        border-radius: 25%;
+        max-width: 100%;
+        object-fit: contain;
+  }
+  .skills img:hover{
+        height: 180px;
+        width: 180px; 
+  }
+  /* Achievements Carousel Styles */
+  .carousel-certificate-item {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 252, 248, 0.98) 50%, rgba(255, 255, 255, 0.98) 100%);
+    height: 500px;
+    max-width: 560px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 25px;
+    padding: 35px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 
+      0 20px 60px rgba(167, 201, 87, 0.15),
+      0 10px 30px rgba(0, 0, 0, 0.1),
+      0 0 0 1px rgba(255, 255, 255, 0.9) inset;
+    border: 2px solid rgba(167, 201, 87, 0.2);
+    position: relative;
+    overflow: hidden;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+  }
+
+  .carousel-certificate-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, 
+      #a7c957 0%, 
+      #6c8e47 25%,
+      #a7c957 50%,
+      #6c8e47 75%,
+      #a7c957 100%);
+    background-size: 300% 100%;
+    animation: shimmer 4s ease-in-out infinite;
+    box-shadow: 0 2px 10px rgba(167, 201, 87, 0.5);
+  }
+
+  .carousel-certificate-item::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(167, 201, 87, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+  }
+
+  @keyframes shimmer {
+    0%, 100% { background-position: 0% 0%; }
+    50% { background-position: 200% 0%; }
+  }
+
+  .carousel-certificate-item:hover {
+    transform: translateY(-15px) scale(1.03);
+    box-shadow: 
+      0 30px 80px rgba(167, 201, 87, 0.25),
+      0 15px 40px rgba(0, 0, 0, 0.15),
+      0 0 0 1px rgba(255, 255, 255, 1) inset,
+      0 0 60px rgba(167, 201, 87, 0.2);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(250, 255, 250, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    border-color: rgba(167, 201, 87, 0.4);
+    animation: none;
+  }
+
+  .carousel-certificate-item:hover::after {
+    opacity: 1;
+  }
+
+  .certificate-badge {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 50%, #ffd700 100%);
+    background-size: 200% 200%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 
+      0 8px 25px rgba(255, 215, 0, 0.5),
+      0 0 20px rgba(255, 215, 0, 0.3),
+      inset 0 2px 5px rgba(255, 255, 255, 0.5);
+    animation: pulse 2s ease-in-out infinite, rotateGlow 4s linear infinite;
+    z-index: 10;
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+  }
+
+  @keyframes rotateGlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .certificate-badge svg {
+    color: #ff6600;
+    width: 35px;
+    height: 35px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s ease;
+  }
+
+  .certificate-badge:hover {
+    transform: scale(1.15) rotate(10deg);
+    box-shadow: 
+      0 12px 35px rgba(255, 215, 0, 0.6),
+      0 0 30px rgba(255, 215, 0, 0.4);
+  }
+
+  .certificate-badge:hover svg {
+    transform: scale(1.1);
+  }
+
+  @keyframes pulse {
+    0%, 100% { 
+      transform: scale(1); 
+      box-shadow: 
+        0 8px 25px rgba(255, 215, 0, 0.5),
+        0 0 20px rgba(255, 215, 0, 0.3);
+    }
+    50% { 
+      transform: scale(1.08); 
+      box-shadow: 
+        0 10px 30px rgba(255, 215, 0, 0.6),
+        0 0 25px rgba(255, 215, 0, 0.4);
+    }
+  }
+
+  .certificate-link {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    position: relative;
+    margin: 20px 0;
+  }
+
+  .certificate-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 
+      0 15px 40px rgba(0, 0, 0, 0.2),
+      0 5px 15px rgba(167, 201, 87, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(248, 252, 248, 0.9));
+    border: 2px solid rgba(167, 201, 87, 0.15);
+  }
+
+  .certificate-img-wrapper:hover {
+    box-shadow: 
+      0 25px 60px rgba(0, 0, 0, 0.25),
+      0 10px 30px rgba(167, 201, 87, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.6),
+      0 0 40px rgba(167, 201, 87, 0.15);
+    transform: translateY(-5px);
+    border-color: rgba(167, 201, 87, 0.3);
+  }
+
+  .carousel-certificate-img {
+    height: 300px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.1));
+  }
+
+  .certificate-img-wrapper:hover .carousel-certificate-img {
+    transform: scale(1.08) translateY(-3px);
+    filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.2));
+  }
+
+  .certificate-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+      rgba(167, 201, 87, 0.95) 0%, 
+      rgba(108, 142, 71, 0.95) 50%,
+      rgba(167, 201, 87, 0.95) 100%);
+    background-size: 200% 200%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+    border-radius: 15px;
+    animation: gradientShift 3s ease infinite;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+  }
+
+  @keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  .certificate-img-wrapper:hover .certificate-overlay {
+    opacity: 1;
+  }
+
+  .view-certificate {
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border: 3px solid white;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.25);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    transform: translateY(20px) scale(0.9);
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 
+      0 10px 30px rgba(0, 0, 0, 0.2),
+      inset 0 2px 5px rgba(255, 255, 255, 0.3);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .certificate-img-wrapper:hover .view-certificate {
+    transform: translateY(0) scale(1);
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 
+      0 15px 40px rgba(0, 0, 0, 0.3),
+      inset 0 2px 5px rgba(255, 255, 255, 0.4);
+  }
+
+  .certificate-info {
+    margin-top: auto;
+    width: 100%;
+  }
+
+  .certificate-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #a7c957 0%, #6c8e47 50%, #a7c957 100%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    animation: gradientText 4s ease infinite;
+    text-shadow: 0 0 30px rgba(167, 201, 87, 0.3);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  }
+
+  @keyframes gradientText {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  .certificate-provider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+  }
+
+  .certificate-provider svg {
+    color: #28a745;
+    flex-shrink: 0;
+  }
+
+  .certificate-provider strong {
+    color: #28a745;
+    font-weight: 600;
+  }
+
+  #achievementsCarousel {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 15px 0;
+    position: relative;
+  }
+
+  #achievementsCarousel::before,
+  #achievementsCarousel::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(167, 201, 87, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+    transform: translateY(-50%);
+  }
+
+  #achievementsCarousel::before {
+    left: -30px;
+    animation: pulseGlow 3s ease-in-out infinite;
+  }
+
+  #achievementsCarousel::after {
+    right: -30px;
+    animation: pulseGlow 3s ease-in-out infinite 1.5s;
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% { 
+      transform: translateY(-50%) scale(1);
+      opacity: 0.5;
+    }
+    50% { 
+      transform: translateY(-50%) scale(1.3);
+      opacity: 0.8;
+    }
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+
+  .carousel-control-prev {
+    left: -80px;
+  }
+
+  .carousel-control-next {
+    right: -80px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background: linear-gradient(135deg, rgba(167, 201, 87, 0.95) 0%, rgba(108, 142, 71, 0.95) 100%);
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 
+      0 8px 25px rgba(167, 201, 87, 0.4),
+      0 0 20px rgba(167, 201, 87, 0.2),
+      inset 0 2px 5px rgba(255, 255, 255, 0.3);
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+
+  .carousel-control-prev-icon:hover,
+  .carousel-control-next-icon:hover {
+    background: linear-gradient(135deg, rgba(167, 201, 87, 1) 0%, rgba(108, 142, 71, 1) 100%);
+    transform: scale(1.15);
+    box-shadow: 
+      0 12px 35px rgba(167, 201, 87, 0.5),
+      0 0 30px rgba(167, 201, 87, 0.3),
+      inset 0 2px 5px rgba(255, 255, 255, 0.4);
+  }
+
+  @media(max-width: 768px) {
+    .carousel-control-prev {
+      left: -20px;
+    }
+    
+    .carousel-control-next {
+      right: -20px;
+    }
+    
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  .carousel-indicators {
+    bottom: -35px;
+    margin-bottom: 0;
+    gap: 10px;
+  }
+
+  .carousel-indicators button {
+    background: linear-gradient(135deg, rgba(167, 201, 87, 0.5) 0%, rgba(108, 142, 71, 0.5) 100%);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 
+      0 4px 15px rgba(167, 201, 87, 0.3),
+      inset 0 2px 4px rgba(255, 255, 255, 0.5);
+    opacity: 0.7;
+  }
+
+  .carousel-indicators button:hover {
+    background: linear-gradient(135deg, rgba(167, 201, 87, 0.8) 0%, rgba(108, 142, 71, 0.8) 100%);
+    transform: scale(1.3) translateY(-2px);
+    opacity: 1;
+    box-shadow: 
+      0 6px 20px rgba(167, 201, 87, 0.4),
+      inset 0 2px 4px rgba(255, 255, 255, 0.6);
+  }
+
+  .carousel-indicators button.active {
+    background: linear-gradient(135deg, #a7c957 0%, #6c8e47 100%);
+    width: 40px;
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0.9);
+    opacity: 1;
+    box-shadow: 
+      0 8px 25px rgba(167, 201, 87, 0.5),
+      0 0 20px rgba(167, 201, 87, 0.3),
+      inset 0 2px 5px rgba(255, 255, 255, 0.5);
+    animation: indicatorPulse 2s ease-in-out infinite;
+  }
+
+  @keyframes indicatorPulse {
+    0%, 100% { 
+      box-shadow: 
+        0 8px 25px rgba(167, 201, 87, 0.5),
+        0 0 20px rgba(167, 201, 87, 0.3);
+    }
+    50% { 
+      box-shadow: 
+        0 10px 30px rgba(167, 201, 87, 0.6),
+        0 0 25px rgba(167, 201, 87, 0.4);
+    }
+  }
+.Projectsflex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.Projectsflex div{
+  margin: 20px;
+  background-color:rgba(235, 234, 234, 0.332); 
+  height: 350px;
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+  border-radius: 10%;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Projectsflex img{
+  height: 200px;
+  width: 350px;  
+  margin: 20px; 
+  max-width: 90%;
+  object-fit: contain;
+}
+.Projectsflex div:hover{
+  height:400px ;
+  width:410px;
+  background-color: rgba(235, 234, 234, 0.645);
+  font-size: larger;
+  line-height: 30px;
+}
+.contactflex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:center;
+}
+.contactflex .columnleft{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-basis: 700px;
+  flex-grow: 1;
+  margin: 40px;
+  min-width: 280px;
+}
+.contactflex .columnright{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 40px;
+  flex-grow: 1;
+  min-width: 280px;
+}
+.fields{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.fieldname{
+  flex: 1;
+  min-width: 200px;
+}
+.fieldemail{
+  flex: 1;
+  min-width: 200px;
+}
+.fieldname input,.fieldemail input{
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.field input{
+  width: 100%;
+  margin-bottom:10px;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.fieldtextarea textarea{
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  min-height: 120px;
+}
+.button-area button{
+  background-color:#4CAF50;
+  border: 1px solid transparent;
+  border-radius: 5%;
+  padding: 15px 30px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.button-area button:hover {
+  background-color: #45a049;
+}
+
+/* Tablet and smaller desktop */
+@media(max-width: 992px){
+  .con{
+    min-height: 400px;
+  }
+  .ayushi{
+    height: 250px;
+    width: 250px;
+    margin-left: 100px;
+  }
+  .text1{
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+  }
+  .thought{
+    font-size: 1.5rem;
+  }
+  .Projectsflex div{
+    width: 350px;
+    height: 320px;
+  }
+  .Projectsflex img{
+    width: 300px;
+    height: 180px;
+  }
+  .Projectsflex div:hover{
+    width: 360px;
+    height: 370px;
+  }
+  .skills{
+    margin: 30px;
+  }
+}
+
+/* Tablet and mobile landscape */
+@media(max-width: 768px) {
+  .con{
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px;
+    padding: 20px;
+  }
+  .pic{
+    width: 100%;
+  }
+  .ayushi{
+    height: 220px;
+    width: 220px;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .box{
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .text1{
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+  }
+  .thought{
+    font-size: 1.3rem;
+  }
+  .skills{
+    margin: 15px;
+  }
+  .skills img{
+    height: 120px;
+    width: 120px;
+  }
+  .skills img:hover{
+    height: 140px;
+    width: 140px;
+  }
+  .Projectsflex div{
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .Projectsflex img{
+    width: 260px;
+    height: 160px;
+  }
+  .Projectsflex div:hover{
+    width: 310px;
+    height: 340px;
+  }
+  .contactflex{
+    flex-direction: column;
+  }
+  .contactflex .columnleft,
+  .contactflex .columnright{
+    flex-basis: auto;
+    margin: 20px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .fields{
+    flex-direction: column;
+  }
+  .fieldname,
+  .fieldemail{
+    min-width: 100%;
+  }
+  h1{
+    font-size: 1.8rem;
+    padding: 30px !important;
+  }
+  .carousel-certificate-item {
+    height: 440px;
+    max-width: 90%;
+    padding: 25px 20px;
+  }
+
+  .certificate-badge {
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    right: 20px;
+  }
+
+  .certificate-badge svg {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .carousel-certificate-img {
+    height: 240px;
+  }
+
+  .certificate-title {
+    font-size: 1.8rem;
+  }
+
+  .certificate-provider {
+    font-size: 0.95rem;
+  }
+
+  #achievementsCarousel::before,
+  #achievementsCarousel::after {
+    display: none;
+  }
+}
+
+/* Small mobile devices */
+  @media(max-width:500px){
+    .con{
+      padding: 15px;
+    }
+    .con .ayushi{
+      height: 180px;
+      width: 180px;
+      margin-top: 10px;
+      margin-left: 0;
+    }
+  .box{
+      margin-top: 20px;
+      margin-left: 0;
+      padding: 10px;
+    }
+    .box div{ 
+      flex-wrap: wrap;
+      font-size: 15px;
+    }
+    .text1{
+      font-size: 1rem;
+      letter-spacing: 2px;
+    }
+    .thought{
+      font-size: 1rem;
+    }
+    h1{
+      font-size: 1.5rem !important;
+      padding: 20px !important;
+    }
+    .skills{
+      margin: 10px;
+    }
+    .skills img{
+      height: 100px;
+      width: 100px;
+    }
+    .skills img:hover{
+      height: 110px;
+      width: 110px;
+    }
+    .Projectsflex div{
+      width: 280px;
+      height: 280px;
+      margin: 15px;
+    }
+    .Projectsflex img{
+      width: 240px;
+      height: 150px;
+      margin: 15px;
+    }
+    .Projectsflex div:hover{
+      width: 290px;
+      height: 320px;
+    }
+    .contactflex .columnleft,
+    .contactflex .columnright{
+      margin: 15px;
+    }
+    .fieldname input,
+    .fieldemail input,
+    .field input,
+    .fieldtextarea textarea{
+      padding: 10px 15px;
+    }
+    .button-area button{
+      padding: 12px 25px;
+      font-size: 14px;
+    }
+    .carousel-certificate-item {
+      height: 400px;
+      max-width: 95%;
+      padding: 20px 15px;
+    }
+
+    .certificate-badge {
+      width: 45px;
+      height: 45px;
+      top: 15px;
+      right: 15px;
+    }
+
+    .certificate-badge svg {
+      width: 24px;
+      height: 24px;
+    }
+    
+    .carousel-certificate-img {
+      height: 200px;
+    }
+
+    .certificate-title {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    .certificate-provider {
+      font-size: 0.85rem;
+    }
+
+    .view-certificate {
+      font-size: 1rem;
+      padding: 12px 20px;
+      letter-spacing: 1.5px;
+    }
+    
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 40px;
+      height: 40px;
+    }
+
+    .carousel-indicators {
+      bottom: -30px;
+      margin-bottom: 0;
+    }
+
+    .carousel-indicators button {
+      width: 14px;
+      height: 14px;
+    }
+
+    .carousel-indicators button.active {
+      width: 35px;
+    }
+
+    #achievementsCarousel::before,
+    #achievementsCarousel::after {
+      display: none;
+    }
+  }
+
